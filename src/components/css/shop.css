@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
+
+
+.shopHeader {
+    text-align: left;
+    background-color: #FCF8EC;
+    width: 100%;
+    height: 200px;
+    align-content: center;
+    padding: 50px;
+}
+
+.shopHeader h3 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 50px;
+    color : #433520;
+}
+
+.shopHeader h5 {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 30px;
+    color : #433520;
+}
+
+.shopSection{
+    margin-bottom: 30px;
+}
+.buttons {
+    text-align: center;
+}
+
+.button {
+    margin: 30px;
+    display: inline-block;
+}

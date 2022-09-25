@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
+
+
+.aboutHeader {
+    text-align: center;
+    background-color: #FCF8EC;
+    width: 100%;
+    height: 250px;
+    align-content: center;
+    padding: 70px;
+}
+
+.aboutHeader h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 70px;
+    color : #025955;
+    font-weight: bolder;
+}
+
+.aboutHeader h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    color : #025955;
+}
+
+.aboutAside {
+    color: #FDE8CD;
+    background-color : #025955;
+    float : left;
+    width: 23%;
+}
+
+.aboutAside h4{
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.aboutAside1 {
+    padding-top: 60px;
+    padding-right: 5px;
+    margin-bottom: 40px;
+    height: 150px;
+}
+
+.aboutAside2 {
+    padding-top: 60px;
+    padding-right: 5px;
+    margin-bottom: 40px;
+    height: 500px;
+}
+
+.aboutAside3 {
+    padding-top: 50px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    height: 500px;
+    border-bottom: 1px solid #FDE8CD;
+}
+
+
+.aboutSection {
+    color: #FDE8CD;
+    background-color : #025955;
+    float: left;
+    width: 77%;
+}
+
+.aboutSection p {
+    font-size: 17px;
+}
+
+.aboutSection1 {
+    padding: 50px 20px 0  30px;
+    margin-bottom: 40px;
+    height: 150px;
+}
+
+.aboutSection2-1 {
+    padding: 50px 20px 0 30px;
+    height: 300px;
+}
+
+.aboutSection2-2 {
+    padding: 0 20px 0 30px;
+    height: 150px;
+}
+
+.aboutSection2-3 {
+    padding: 0 0 0 30px;
+    margin-bottom: 40px;
+    height: 50px;
+}
+
+.aboutSection3 {
+    padding: 50px 20px 0 30px;
+    margin-bottom: 40px;
+    height: 600px;
+}
+
+.aboutSection3-1 {
+    padding: 40px 20px 0 30px;
+    height: 230px;
+}
+
+.aboutSection3-2 {
+    padding: 40px 20px 0 30px;
+    margin-bottom: 20px;
+    height: 270px;
+    border-bottom: 1px solid #FDE8CD;
+}
+
+.aboutFooter {
+    color: #FDE8CD;
+    background-color : #025955;
+    clear:both;
+    height: 500px;
+    padding: 30px;
+    text-align: center;
+}
+
+.aboutFooter P {
+    font-size: 17px;
+}

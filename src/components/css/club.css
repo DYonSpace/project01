@@ -1,0 +1,51 @@
+
+.clubHeader {
+    text-align: left;
+    background-color: #433520;
+    width: 100%;
+    height: 200px;
+    align-content: center;
+    padding: 50px;
+}
+
+.clubHeader h3 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 50px;
+    color : #FCF8EC;
+}
+
+.clubHeader h5 {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 30px;
+    color : #FCF8EC;
+}
+
+.clubSection {
+    text-align: left;
+    background-color: #FCF8EC;
+    width: 100%;    
+    align-content: center;
+    padding: 50px;
+}
+.clubSection h3 {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color : #433520;
+
+}
+
+.clubSection h5 {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color : #433520;
+}
+
+.clubSection p {
+    margin-top: 20px;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 20px;
+    color : #433520;
+}
+
