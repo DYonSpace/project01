@@ -41,7 +41,7 @@ function Club(){
             </header>
             <section className='clubSection'>
                 <div className='clubSection1'>
-                <h3>투유클럽</h3>
+                <h3>2U클럽</h3>
                 <h5>스마트하게 성장하는 투유 클럽의 첫 클럽멤버가 되어줘!</h5>
                 <p>투유클럽은 내가 원하는 나, 더 나은 내일의 나를 위해<br/>
                     오늘 하루도 최선을 다하는 멋진 사람들을 위한 커뮤니티야.<br/>
