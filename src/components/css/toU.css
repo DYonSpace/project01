@@ -3,6 +3,27 @@
 .toU{
     background-color: #FCF8EC;
 }
+
+.Clause, .Policy {
+    background-color:rgba(0,0,0,0.8);
+    color: white;
+    position: absolute;
+    z-index: 10;
+    justify-content: center;
+}
+
+.ClauseBody, .PolicyBody {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 50px;
+    width: 60%;
+}
+
+.ClauseButton, .PolicyButton {
+    float: right;
+}
+
+
 .navContainer {
     display: flex;
     flex-wrap: wrap;

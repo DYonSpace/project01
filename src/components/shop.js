@@ -43,7 +43,7 @@ function Shop({items, setItems}){
             {
                 showMore === true ?
                 <div className='button'>
-                <Button variant="dark" onClick={()=>{
+                <Button variant="outline-dark" onClick={()=>{
 
                 setShowSpinner(true);
             
@@ -57,7 +57,7 @@ function Shop({items, setItems}){
                     {
                     temp.push(value.data[i]); //배열에 하나씩 넣어야하는 객체
                     }
-                // setShowSpinner(false);
+                
                 setItems(temp);
                 const tempCnt = getCnt+1;
                 setGetCnt(tempCnt);
@@ -67,13 +67,12 @@ function Shop({items, setItems}){
                 }
                 })
                 .catch(()=>{
-                // setShowSpinner(false);
                 console.log('뭔가 잘못된 거');
                 })
-                .finally(()=>{  //다 돌고나서 성공을 하든 실패를 하든 무조건 스피너 사라지게!
+                .finally(()=>{
                 setShowSpinner(false);
                 })
-                }}>더보기...</Button></div> : null                      
+                }}>더보기</Button></div> : null                      
             }
             </div>
             </section>

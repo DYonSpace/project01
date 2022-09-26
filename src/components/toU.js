@@ -4,16 +4,38 @@ import Info from "./Info";
 import CompanyInfo from "./CompanyInfo";
 import MoreInfo from "./MoreInfo";
 import AboutToU from "./AboutToU";
+import {useState} from 'react';
+import Clause from './clause'
+import Policy from './policy';
 
 
 function ToU({userName}){
 
     let navigate = useNavigate();
+    let [showClause, setShowClause] = useState(false);
+    let [showPolicy, setShowPolicy] = useState(false);
 
     return(
 
         <div className="toU">
+
+            <div className='clause'>
+                {
+                showClause === true?
+                <Clause setShowClause={setShowClause}/> : null
+                }
+            </div>
+
+            <div className='policy'>
+                {
+                showPolicy === true?
+                <Policy setShowPolicy={setShowPolicy}/> : null
+                }
+            </div>
+
             <header className="toUnav">
+                
+
                 <div>
                 <Navbar bg="white" variant="light">
                     <Container>                        
@@ -46,7 +68,7 @@ function ToU({userName}){
                 <div className='infoContainer'>
                     <div><Info/></div>
                     <div><CompanyInfo/></div>
-                    <div><MoreInfo/></div>
+                    <div><MoreInfo setShowClause={setShowClause} setShowPolicy={setShowPolicy}/></div>
                     <div><AboutToU/></div>
                 </div>
             </footer>

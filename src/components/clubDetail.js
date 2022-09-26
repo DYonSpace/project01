@@ -24,7 +24,7 @@ function ClubDetail({toUclubs, setToUclubs}){
                 </ListGroup>
                 <div className="detailButton">
                 <Card.Body>
-                    <Button variant="dark">담기</Button>
+                    <Button variant="outline-dark">담기</Button>
                 </Card.Body>
                 </div>
             </Card>
