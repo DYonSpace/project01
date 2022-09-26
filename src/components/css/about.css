@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
 
 .aboutHeader {
     text-align: center;
@@ -20,11 +19,11 @@
 .aboutHeader h3 {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 30px;
-    color : #025955;
+    color : #FCF8EC;
 }
 
 .aboutAside {
-    color: #FDE8CD;
+    color: #FCF8EC;
     background-color : #025955;
     float : left;
     width: 23%;
@@ -53,14 +52,13 @@
 .aboutAside3 {
     padding-top: 50px;
     padding-right: 5px;
-    margin-bottom: 20px;
-    height: 500px;
-    border-bottom: 1px solid #FDE8CD;
+    height: 450px;
+    border-bottom: solid #025955;
 }
 
 
 .aboutSection {
-    color: #FDE8CD;
+    color: #FCF8EC;
     background-color : #025955;
     float: left;
     width: 77%;
@@ -95,7 +93,7 @@
 .aboutSection3 {
     padding: 50px 20px 0 30px;
     margin-bottom: 40px;
-    height: 600px;
+    height: 550px;
 }
 
 .aboutSection3-1 {
@@ -105,20 +103,32 @@
 
 .aboutSection3-2 {
     padding: 40px 20px 0 30px;
-    margin-bottom: 20px;
-    height: 270px;
-    border-bottom: 1px solid #FDE8CD;
+    height: 220px;
+    border-bottom: solid #025955;
 }
 
-.aboutFooter {
-    color: #FDE8CD;
-    background-color : #025955;
+.aboutFooter1 {
+    color: #025955;
+    background-color : #FCF8EC;
     clear:both;
-    height: 500px;
+    height: 300px;
     padding: 30px;
     text-align: center;
 }
 
-.aboutFooter P {
+.aboutFooter1 P {
+    font-size: 17px;
+}
+
+.aboutFooter2 {
+    color: #025955;
+    background-color : #FCF8EC;
+    clear:both;
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+}
+
+.aboutFooter2 P {
     font-size: 17px;
 }

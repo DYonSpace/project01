@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
 
-
+.toU{
+    background-color: #FCF8EC;
+}
 .navContainer {
     display: flex;
     flex-wrap: wrap;
+}
+
+.navBrand {
+    cursor: pointer;
 }
 
 .toUnav {

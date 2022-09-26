@@ -43,7 +43,7 @@ function Shop({items, setItems}){
             {
                 showMore === true ?
                 <div className='button'>
-                <Button variant="Light" onClick={()=>{
+                <Button variant="dark" onClick={()=>{
 
                 setShowSpinner(true);
             

@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
 
 .shopHeader {
     text-align: left;
-    background-color: #FCF8EC;
+    background-color: #433520;
     width: 100%;
     height: 200px;
     align-content: center;
@@ -13,13 +12,13 @@
 .shopHeader h3 {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 50px;
-    color : #433520;
+    color : #FCF8EC;
 }
 
 .shopHeader h5 {
     font-family: 'Sunflower', sans-serif;
     font-size: 30px;
-    color : #433520;
+    color : #FCF8EC;
 }
 
 .shopSection{
@@ -32,4 +31,9 @@
 .button {
     margin: 30px;
     display: inline-block;
+}
+
+
+.shopItemDetail .detailTitle{
+    font-family: 'Jua', sans-serif;
 }

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
+
+.Main {
+    background-color: #FCF8EC;
+}
+
+.mainHeader {
+    text-align: left;
+    background-color: #025955;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    align-content: center;
+    padding: 70px;
+}
+
+.mainHeader h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 70px;
+    color : #FCF8EC;
+    font-weight: bolder;
+}
+
+.mainHeader h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    color : #FCF8EC;
+}
+
+.mainSection2 {
+    text-align: left;
+    background-color: #433520;
+    width: 100%;
+    height: 250px;
+    align-content: center;
+    text-align: center;
+    padding: 70px;
+}
+
+.mainSection2 h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 70px;
+    color : #FCF8EC;
+    font-weight: bolder;
+}
+
+.mainSection2 h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    color : #FCF8EC;
+}

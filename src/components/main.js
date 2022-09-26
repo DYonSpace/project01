@@ -1,51 +1,26 @@
-import Banner from './banner';
-import {Carousel} from 'react-bootstrap';
+import './css/main.css';
 import { Outlet } from 'react-router-dom';
+import MainSlide1 from './mainSlide1';
+import MainSlide2 from './mainSlide2';
 
 
 function Main(){
 
     return(
         <div className="Main">
-            <header>
-
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="http://127.0.0.1:8898/images/slide01.png"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>Best1</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="http://127.0.0.1:8898/images/slide02.png"
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h3>Best2</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="http://127.0.0.1:8898/images/slide03.png"
-            alt="Third slide"
-          />
-        <Carousel.Caption>
-          <h3>Best3</h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-
+            <header className="mainHeader">
+            <h1>ToU. Goodbye 2022!</h1>
+            <h3>#2022 낼나다이어리 30% 할인!</h3>
             </header>
-
-            <section>
-              <Banner/>
+            <section className="mainSection1">
+            <MainSlide1/>
+            </section>
+            <section className="mainSection2">
+            <h1>ToU. 2Uclub beta OPEN!</h1>
+            <h3>#2U클럽beta open기념 10월 얼리버드 할인!</h3>
+            </section>
+            <section className="mainSection3">
+            <MainSlide2/>
             </section>
             <Outlet/>
         </div>

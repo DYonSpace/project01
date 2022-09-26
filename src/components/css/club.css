@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
 
 .clubHeader {
     text-align: left;
@@ -51,4 +52,8 @@
 
 .detailButton {
     text-align: center;
+}
+
+.clubDetail .detailTitle {
+    font-family: 'Jua', sans-serif;
 }

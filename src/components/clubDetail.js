@@ -12,11 +12,10 @@ function ClubDetail({toUclubs, setToUclubs}){
 
     return(
         <div className="clubDetail">
-            <Card style={{ width: '60%', margin:"0 auto" }}>
-            
+            <Card style={{ width: '60%', margin:"40px auto" }}>            
                 <Card.Img variant="top" src={clubInfo.imgPathB} />
                 <Card.Body>
-                    <Card.Title>{clubInfo.clubName}</Card.Title>
+                    <Card.Title className="detailTitle">{clubInfo.clubName}</Card.Title>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroup.Item>{clubInfo.content1}</ListGroup.Item>

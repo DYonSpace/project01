@@ -43,15 +43,16 @@ function About(){
                     <p><strong>2U클럽</strong> - 계획하고 실천하는 사람들의 커뮤니티. 투유어의 의지와 열정을 실행과 습관으로 멋지게 바꿀 참여프로그램을 만들어요.</p>
                 </div>                
             </section>
-            <footer >
-                <div className="aboutFooter">
+            <footer className="aboutFooter">
+                <div className="aboutFooter1">
                     <p>ToU는 오늘을 계획하고 실천하는 사람이 많아질수록</p>
                     <p>세상 모든 사람들이 더 나은 내일을 행복하게 살아갈 것이라고 믿어요!</p>
                     <br/><br/>
                     <p>더 나은 당신을 발견하고, 더 멋진 내일을 살 수 있도록</p>
                     <p>디지털과 아날로그를 연결하여, 더 똑똑하고 편리하게 성장할 수 있도록</p>
                     <p>우리의 오늘에 최선을 더하고, 더 멋진 내일의 우리를 만들어갈 도구를 ToU의 방식으로 만들어요.</p>
-                    <br/><br/>
+                    </div>
+                    <div className="aboutFooter2">
                     <p style={{fontSize:"20px", fontWeight: "bold"}}>디지털과 아날로그를 넘나드는 나의 세상에서,</p>
                     <p style={{fontSize:"20px", fontWeight: "bold"}}>더 나은 내일을 위해</p>
                     <p style={{fontSize:"20px", fontWeight: "bold"}}>Today, Do your best!</p>

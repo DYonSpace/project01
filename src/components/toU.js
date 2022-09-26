@@ -19,7 +19,7 @@ function ToU({userName}){
                     <Container>                        
                         <Nav className="me-auto">
                             <div className="navContainer">
-                                <div>
+                                <div className='navBrand'>
                                     <Navbar.Brand onClick={()=>{navigate("/toU"); }} style={{fontSize:"50px"}}>ToU.</Navbar.Brand>
                                 </div>
                                 <div>
@@ -40,7 +40,7 @@ function ToU({userName}){
                 </div>
             </header>
             <section>
-                <Outlet></Outlet>
+                <Outlet/>
             </section>
             <footer className="ToUfooter">
                 <div className='infoContainer'>

@@ -11,15 +11,16 @@ function ShopItemDetail({items}){
     })
 
     return(
-        <div className="ShopItemDetail">
-            <Card style={{ width: '60%', margin:"0 auto" }}>
+        <div className="shopItemDetail">
+            <div>
+            <Card style={{ width: '60%', margin:"50px auto" }}>
                 <Card.Img variant="top" src={itemInfo.imgPathB} />
                 <Card.Body>
-                    <Card.Title>{itemInfo.itemName}</Card.Title>
+                    <Card.Title className='detailTitle'>{itemInfo.itemName}</Card.Title>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                     <ListGroup.Item>{itemInfo.content}</ListGroup.Item>
-                    <ListGroup.Item>{itemInfo.price}</ListGroup.Item>
+                    <ListGroup.Item>{"가격 : "}{itemInfo.price}{"원"}</ListGroup.Item>
                 </ListGroup>
                 <div className='detailButton'>
                 <Card.Body>
@@ -27,6 +28,7 @@ function ShopItemDetail({items}){
                 </Card.Body>
                 </div>
             </Card>
+            </div>
             <Outlet/>
         </div>
     );
