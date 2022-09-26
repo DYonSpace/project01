@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import {Form, Button} from 'react-bootstrap';
 import {useState} from 'react';
 import BackMovie from './backMovie';
@@ -36,8 +36,6 @@ function Login({userData, userName, setUserName}){
     } else{
         alert("ID 혹은 PW가 입력되지 않았습니다.")
     };
-
-
 
 
 }
@@ -79,7 +77,7 @@ function Login({userData, userName, setUserName}){
                 </Form.Group>
             </Form>
         </div>
-
+        <Outlet/>
     </div>
 
 );}export default Login;

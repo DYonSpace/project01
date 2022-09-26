@@ -1,37 +1,8 @@
 import './css/club.css'
 import { Container, Row, Col, Card, } from "react-bootstrap";
-import {Outlet, useNavigate} from 'react-router-dom';
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Club(){
-
-
-    let [toUclubs, setToUclubs] = useState([
-        {
-            id:"club01",
-            clubName:"[10.3시작]2U 독서 클럽: 독서기록장으로 기억에 남는 독서 하기 beta",
-            clubPrice:30000,
-            imgPath:"http://172.30.1.29:8898/images/nelnabook00.png"
-        },
-        {
-            id:"club02",
-            clubName:"[10.3시작]2U 건강 클럽: 럽.마.바로 건강한 변화 기록하기 beta",
-            clubPrice:20000,
-            imgPath:"http://172.30.1.29:8898/images/luvma00.png"
-        },
-        {
-            id:"club03",
-            clubName:"[10.3시작]2U 계획 클럽: 슬대생으로 알찬 한 학기 준비하기 beta",
-            clubPrice:20000,
-            imgPath:"http://172.30.1.29:8898/images/myuniv00.png"
-        },
-        {
-            id:"club04",
-            clubName:"[10.3시작]2U 계획 클럽: 낼나 플래너로 멋진 한 달 계획 세우기 beta",
-            clubPrice:20000,
-            imgPath:"http://172.30.1.29:8898/images/nelnada00.png"
-        }
-    ])
+function Club({toUclubs, setToUclubs}){    
 
     return(
         <div className="club">
@@ -62,6 +33,7 @@ function Club(){
                 </Container>
                 </div>
             </section>
+
         </div>
     );
 } export default Club;
@@ -72,16 +44,18 @@ function ClubItem({toUclubs, toUclub, i}){
     let navigate = useNavigate();
 
     return(
+    <div>
         <Col>
-        <Card style={{ width: '18rem', cursor:"pointer", marginTop: "30px"}}  onClick={()=>{navigate("./"+toUclub.id) }}>
-        <Card.Img variant="top" src={toUclubs[i].imgPath} />
-        <Card.Body>
-            <Card.Title>{toUclub.clubName}</Card.Title>
-            <Card.Text>
-            {"가격: "}{toUclub.clubPrice}{"원"}
-            </Card.Text>
-        </Card.Body>
-    </Card>
-    </Col>
+            <Card style={{ width: '18rem', cursor:"pointer", marginTop: "30px"}}  onClick={()=>{navigate("./"+toUclub.id) }}>
+            <Card.Img variant="top" src={toUclubs[i].imgPath}/>
+            <Card.Body>
+                <Card.Title>{toUclub.clubName}</Card.Title>
+                <Card.Text>
+                {"가격: "}{toUclub.clubPrice}{"원"}
+                </Card.Text>
+            </Card.Body>
+            </Card>
+        </Col>
+    </div>
     );
 }

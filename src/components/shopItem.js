@@ -1,16 +1,14 @@
 import { Col, Card, } from "react-bootstrap";
-import {Outlet, useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 function ShopItem({items, item, i}){
 
     let navigate = useNavigate();
 
-
     return(
         <div className="ShopItem">
-            
-            <Col>
+        <Col>
             <Card style={{ width: '18rem', cursor:"pointer", marginTop: "30px"}}  onClick={()=>{navigate("./product/"+item.id) }}>
                 <Card.Img variant="top" src={items[i].imgPath} />
                 <Card.Body>
@@ -23,9 +21,7 @@ function ShopItem({items, item, i}){
                     </Card.Text>
                 </Card.Body>
             </Card>
-            </Col>
-            
-            <Outlet/>
+        </Col>            
         </div>
     );
 } export default ShopItem;

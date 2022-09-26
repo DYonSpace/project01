@@ -1,4 +1,3 @@
-import './css/about.css';
 import { Outlet, useNavigate } from 'react-router-dom';
 import {Navbar, Container, Nav} from 'react-bootstrap';
 import Info from "./Info";
@@ -20,7 +19,6 @@ function ToU({userName}){
                     <Container>                        
                         <Nav className="me-auto">
                             <div className="navContainer">
-
                                 <div>
                                     <Navbar.Brand onClick={()=>{navigate("/toU"); }} style={{fontSize:"50px"}}>ToU.</Navbar.Brand>
                                 </div>

@@ -3,40 +3,13 @@ import {useState} from 'react';
 import {Container, Row, Button, Spinner} from 'react-bootstrap';
 import axios from 'axios';
 import ShopItem from './shopItem';
-import { Outlet } from 'react-router-dom';
 
-function Shop(){
+function Shop({items, setItems}){
 
     let [getCnt, setGetCnt] = useState(2);
     let [showMore, setShowMore] = useState(true);
     let [showSpinner, setShowSpinner] = useState(false);
 
-    let [items, setItems] = useState([
-        {
-            id: "pln001",
-            itemName: "2022 낼나다이어리 (프로, 소프트레인보우)",
-            content: "날짜형·프로·소프트레인보우",
-            price: 12500,
-            imgPath: "http://172.30.1.29:8898/images/planner-f1.png",
-            imgPathB: "http://172.30.1.29:8898/images/planner-b1.png",
-        },
-        {
-            id: "pln002",
-            itemName: "2022 낼나다이어리 (프로, 크림그레이)",
-            content: "날짜형·프로·크림그레이",
-            price: 12500,
-            imgPath: "http://172.30.1.29:8898/images/planner-f2.png",
-            imgPathB: "http://172.30.1.29:8898/images/planner-b2.png",
-        },
-        {
-            id: "pln003",
-            itemName: "2022 낼나다이어리 (프로, 네온블랙)",
-            content: "날짜형·프로·네온블랙",
-            price: 12500,
-            imgPath: "http://172.30.1.29:8898/images/planner-f3.png",
-            imgPathB: "http://172.30.1.29:8898/images/planner-b3.png",
-        },
-    ]);
 
     return(
         <div className="Shop">
@@ -102,9 +75,6 @@ function Shop(){
                 })
                 }}>더보기...</Button></div> : null                      
             }
-            </div>
-            <div>
-            <Outlet/>
             </div>
             </section>
 

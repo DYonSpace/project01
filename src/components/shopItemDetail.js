@@ -1,6 +1,7 @@
 import './css/shop.css';
+import './css/toU.css';
 import {Button, Card, ListGroup} from 'react-bootstrap';
-import {Outlet, useParams} from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
 
 function ShopItemDetail({items}){
 
@@ -11,10 +12,8 @@ function ShopItemDetail({items}){
 
     return(
         <div className="ShopItemDetail">
-
-            <Card style={{ width: '50%', margin:"0 auto" }}>
-
-                <Card.Img variant="top" src={itemInfo.imgPath} />
+            <Card style={{ width: '60%', margin:"0 auto" }}>
+                <Card.Img variant="top" src={itemInfo.imgPathB} />
                 <Card.Body>
                     <Card.Title>{itemInfo.itemName}</Card.Title>
                 </Card.Body>
@@ -22,9 +21,11 @@ function ShopItemDetail({items}){
                     <ListGroup.Item>{itemInfo.content}</ListGroup.Item>
                     <ListGroup.Item>{itemInfo.price}</ListGroup.Item>
                 </ListGroup>
+                <div className='detailButton'>
                 <Card.Body>
-                    <Button variant="Warning">담기</Button>
+                    <Button variant="dark">담기</Button>
                 </Card.Body>
+                </div>
             </Card>
             <Outlet/>
         </div>
