@@ -45,14 +45,6 @@
     box-sizing: border-box;
 }
 
-.banner {
-    background-image: url('http://127.0.0.1:8898/images/dream.jpeg');
-    height: 500px;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .ToUfooter {
     color: #FDE8CD;
     background-color : #433520;
