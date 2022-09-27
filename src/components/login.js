@@ -26,7 +26,9 @@ function Login({userData, userName, setUserName}){
                 console.log('이름확인')
                 console.log(userName)
                 navigate("/toU");
-                alert("로그인 성공. \""+userName+"\"님 환영합니다!")
+                if(loginId === "dancingfrog.lee@gmail.com"){
+                    alert("로그인 성공. \"DYon\"님 환영합니다!")
+                } else{alert("로그인 성공. \""+userName+"\"님 환영합니다!")}                
             } else {
                 alert('PW를 확인하세요.')            
             }

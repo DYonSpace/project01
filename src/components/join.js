@@ -13,6 +13,7 @@ function Join({userData, setUserData, userName, setUserName}){
 
     const joinSubmit= () => {
         if(inputId.trim()!=="" && inputPw.trim()!=="" && inputName.trim()!==""){
+            if(inputId.includes('@')===true){
             let temp = [...userData]
             let tempdata = temp.filter((data)=>{
                 return data.id===inputId})
@@ -31,9 +32,14 @@ function Join({userData, setUserData, userName, setUserName}){
                     setInputPw("");
                     setInputName("");
                 }
+            }else{
+                alert('이메일을 입력하세요.')
+            }            
             } else {
                 alert('빈 칸을 채워주세요.')
             }
+
+
         }
 
 

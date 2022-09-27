@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
+
+
+.NotFound {
+    background-color: #FCF8EC;
+    text-align: center;
+}
+
+.NotFound h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 300px;
+    color : #433520;
+}
+
+.NotFound h2 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 200px;
+    color : #433520;
+}
+
+.NotFound p {
+    font-family: 'Sunflower', sans-serif;
+    font-size: 100px;
+    color : #433520;
+}

@@ -34,9 +34,7 @@ function ToU({userName}){
             </div>
 
             <header className="toUnav">
-                
-
-                <div>
+            <div>
                 <Navbar bg="white" variant="light">
                     <Container>                        
                         <Nav className="me-auto">

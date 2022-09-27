@@ -7,7 +7,7 @@ function Clause({setShowClause}){
         <div className="Clause">
 
             <div class="ClauseBody">
-                <h3>이용약관</h3>
+                <h3>이용약관</h3><br/>
                 <div className='ClauseButton'>
                     <CloseButton aria-label="Hide" variant="white" onClick={()=>{
                         setShowClause(false);
@@ -16,7 +16,7 @@ function Clause({setShowClause}){
             <br/>
 	<strong>제1조 목적</strong><br/>
 <br/>
-본 이용약관은 “낼나샵”(이하 "사이트")의 서비스의 이용조건과 운영에 관한 제반사항 규정을 목적으로 합니다.<br/>
+본 이용약관은 “투유샵”(이하 "사이트")의 서비스의 이용조건과 운영에 관한 제반사항 규정을 목적으로 합니다.<br/>
 <br/>
 <strong>제2조 용어의 정의</strong><br/>
 <br/>

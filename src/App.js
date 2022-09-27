@@ -14,6 +14,7 @@ import Main from "./components/main";
 import ShopItemDetail from './components/shopItemDetail';
 import ClubDetail from './components/clubDetail';
 import { useState } from 'react';
+import NotFound from './components/NotFound';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
   let [userData, setUserData] = useState([
     {id:"dancingfrog.lee@gmail.com",
-    pw:"aa1122aa.",
+    pw:"1234",
     name:"DYon"}
     ]);
   let [userName, setUserName] = useState("");
@@ -107,7 +108,10 @@ let [toUclubs, setToUclubs] = useState([
           }}>
             <BackMovie/>
             <div className='vText'>
-            <p>For better tomorrow</p>            
+            <p>For better tomorrow</p>
+            <div>
+              Click here!
+            </div>
             </div>
           </div>
         }>
@@ -124,6 +128,7 @@ let [toUclubs, setToUclubs] = useState([
                 <Route path="shop/product/:id" element={<ShopItemDetail items={items} setItems={setItems}/>}/>
         </Route>
         <Route path="/toU/businessInfo" element={<Business/>}/>
+        <Route path="/*" element={<NotFound/>}/>
     </Routes>
     </div>
   )

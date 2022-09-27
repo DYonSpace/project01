@@ -58,6 +58,7 @@
     background-color : #433520;
     clear:both;
     height: 300px;
+    margin:0px;
     padding: 10px;
 }
 
@@ -101,3 +102,4 @@
 .Info a:hover {
     color: #FDE8CD;
 }
+
