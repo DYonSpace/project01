@@ -1,10 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
 
 .Main {
-    background-color: #FCF8EC;
+    
 }
 
-.mainHeader {
+.vText2 {
+    font-family: 'Black Han Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.vText2 .p1 {
+    margin-top: -100px;
+    text-align: center;
+    font-size: 90px;
+    color: white;
+}
+
+.vText2 .p2 {
+    margin: 60px 400px 0 400px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.mainSection1 {
     text-align: left;
     background-color: #025955;
     width: 100%;
@@ -14,20 +37,20 @@
     padding: 70px;
 }
 
-.mainHeader h1 {
+.mainSection1 h1 {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 70px;
     color : #FCF8EC;
     font-weight: bolder;
 }
 
-.mainHeader h3 {
+.mainSection1 h3 {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 30px;
     color : #FCF8EC;
 }
 
-.mainSection2 {
+.mainSection3 {
     text-align: left;
     background-color: #433520;
     width: 100%;
@@ -37,14 +60,14 @@
     padding: 70px;
 }
 
-.mainSection2 h1 {
+.mainSection3 h1 {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 70px;
     color : #FCF8EC;
     font-weight: bolder;
 }
 
-.mainSection2 h3 {
+.mainSection3 h3 {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 30px;
     color : #FCF8EC;

@@ -105,13 +105,11 @@ let [toUclubs, setToUclubs] = useState([
             navigate("login");
             console.log('저장된 userData')
             console.log(userData);
-          }}>
+            }}>
             <BackMovie/>
             <div className='vText'>
-            <p>For better tomorrow</p>
-            <div>
-              Click here!
-            </div>
+              <p>For better tomorrow</p>
+              <div>Click here!</div>
             </div>
           </div>
         }>
