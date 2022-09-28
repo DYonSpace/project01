@@ -28,6 +28,14 @@
 .shopSection{
     margin-bottom: 30px;
 }
+
+.shopCard {
+    margin: 20px 0 10px 0;    
+}
+
+.shopContainer{
+}
+
 .buttons {
     text-align: center;
 }
@@ -40,4 +48,73 @@
 
 .shopItemDetail .detailTitle{
     font-family: 'Jua', sans-serif;
+}
+
+
+
+@media only screen and (max-width:1023px){
+
+    .shopHeader {
+        height: 150px;
+        padding: 30px;
+    }
+    
+    .shopHeader h3 {
+        font-size: 40px;
+    }
+    
+    .shopHeader h5 {
+        font-size: 25px;
+    }
+    
+    .shopSection{
+        margin-bottom: 20px;
+    }
+    
+    .button {
+        margin: 30px;
+        display: inline-block;
+    }
+
+}
+
+
+@media only screen and (max-width:767px){
+
+    .shopHeader {
+        height: 100px;
+        padding: 15px;
+    }
+    
+    .shopHeader h3 {
+        font-size: 30px;
+    }
+    
+    .shopHeader h5 {
+        font-size: 20px;
+    }
+    
+    .shopSection{
+        margin-bottom: 20px;
+    }
+    
+
+}
+
+
+@media only screen and (max-width:480px){
+
+    .shopHeader {
+        height: 80px;
+        padding: 15px;
+    }
+    
+    .shopHeader h3 {
+        font-size: 20px;
+    }
+    
+    .shopHeader h5 {
+        font-size: 16px;
+    }
+    
 }

@@ -19,6 +19,7 @@ function Shop({items, setItems}){
             </header>
 
             <section className="shopSection">
+                <div className='shopContainer'>
             <Container>
                 <Row sm={1} md={3}>
                 {items.map((data, i)=>{
@@ -28,6 +29,7 @@ function Shop({items, setItems}){
                 })}    
                 </Row>
             </Container>
+            </div>
 
                 <div className='buttons'>
             {

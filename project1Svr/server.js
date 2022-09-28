@@ -19,7 +19,6 @@ app.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '/build/index2.html'));
 })
 
-
 app.get('/itemData/list1.json', function(req, res){
     res.json([
         {

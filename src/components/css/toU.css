@@ -5,6 +5,7 @@
     background-color: #FCF8EC;
 }
 
+
 .toUnavbar {
     width: 65%;
 }
@@ -103,6 +104,7 @@
 
 
 .Clause, .Policy {
+    min-width: 390px;
     background-color:rgba(0,0,0,0.8);
     color: white;
     position: absolute;
@@ -119,11 +121,25 @@
 
 .ClauseButton, .PolicyButton {
     float: right;
+    margin: 80px 100px;
 }
 
 
 
 @media only screen and (max-width:1023px){
+
+
+.ClauseBody, .PolicyBody {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 50px;
+    width: 70%;
+}
+
+.ClauseButton, .PolicyButton {
+    float: right;
+    margin: 80px 100px;
+}
 
     .toUnav .navBrand {
         font-size: 40px;
@@ -174,6 +190,20 @@
 
 
 @media only screen and (max-width:767px){
+
+
+.ClauseBody, .PolicyBody {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 50px;
+    width: 80%;
+}
+
+.ClauseButton, .PolicyButton {
+    float: right;
+    margin: 80px 80px;
+}
+
 
     .toUnavbar {
         width: 70%;
@@ -254,6 +284,18 @@
 
 @media only screen and (max-width:480px){
 
+    .ClauseBody, .PolicyBody {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 50px 30px;
+        width: 90%;
+    }
+    
+    .ClauseButton, .PolicyButton {
+        float: right;
+        margin: 80px 60px;
+    }
+    
 
     .toUnavbar {
         width: 85%;

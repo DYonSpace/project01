@@ -23,13 +23,14 @@ function Club({toUclubs}){
                 <div className='clubSection2'>
 
                 <Container>
+                <div className='clubContainer'>
                 <Row sm={1} md={4}>
                 {toUclubs.map((data, i)=>{
                     return(
-                        <ClubItem key={data.id} toUclubs={toUclubs} toUclub={data} i={i}/>
+                        <div className='clubCard'><ClubItem key={data.id} toUclubs={toUclubs} toUclub={data} i={i}/></div>
                     )
-                })}    
-                </Row>
+                })}</Row>
+                </div>
                 </Container>
                 </div>
             </section>
@@ -46,7 +47,7 @@ function ClubItem({toUclubs, toUclub, i}){
     return(
     <div>
         <Col>
-            <Card style={{ width: '18rem', cursor:"pointer", marginTop: "30px"}}  onClick={()=>{navigate("./"+toUclub.id) }}>
+            <Card onClick={()=>{navigate("./"+toUclub.id) }}>
             <Card.Img variant="top" src={toUclubs[i].imgPath}/>
             <Card.Body>
                 <Card.Title>{toUclub.clubName}</Card.Title>

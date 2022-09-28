@@ -9,7 +9,7 @@ function ShopItem({items, item, i}){
     return(
         <div className="ShopItem">
         <Col>
-            <Card style={{ width: '18rem', cursor:"pointer", marginTop: "30px"}}  onClick={()=>{navigate("./product/"+item.id) }}>
+            <Card className="shopCard" onClick={()=>{navigate("./product/"+item.id) }}>
                 <Card.Img variant="top" src={items[i].imgPath} />
                 <Card.Body>
                     <Card.Title>{item.itemName}</Card.Title>

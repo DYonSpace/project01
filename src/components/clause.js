@@ -7,12 +7,12 @@ function Clause({setShowClause}){
         <div className="Clause">
 
             <div class="ClauseBody">
-                <h3>이용약관</h3><br/>
                 <div className='ClauseButton'>
                     <CloseButton aria-label="Hide" variant="white" onClick={()=>{
                         setShowClause(false);
                     }}/>
                 </div>
+                <h3>이용약관</h3><br/>
             <br/>
 	<strong>제1조 목적</strong><br/>
 <br/>
