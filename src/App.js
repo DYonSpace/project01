@@ -172,7 +172,7 @@ let [toUclubs, setToUclubs] = useState([
                 <Route path="shop/product/:id" element={<ShopItemDetail items={items} setItems={setItems}/>}/>
         </Route>
         <Route path="/businessInfo" element={<Business/>}/>
-        <Route path="/*" element={<NotFound/>}/>
+        <Route path="*" element={<NotFound/>}/>
     </Routes>
     </div>
   )
