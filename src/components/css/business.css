@@ -1,7 +1,5 @@
 
 
-
-
 .businessSection table, th, td {
     color: rgb(82, 82, 82);
     text-align: center;
@@ -34,16 +32,16 @@
 
 .businessFooter {
     width: 100%;
-    height: 150px;
-    padding: 20px 30px 20px 30px;
+    height: 100%;
+    padding: 20px;
     color: rgb(82, 82, 82);
     background-color: #EEEEEE;
-
 }
 
 .businessFooter p{
     font-size: 15px;
     font-weight: 500;
+
 }
 
 .businessFooter a {
@@ -54,4 +52,67 @@
 .businessFooter a:hover {
     text-decoration: underline;
     color: #0c57c7;
+}
+
+
+@media only screen and (max-width:1023px){
+
+    .businessFooter {
+        padding: 15px;
+    }
+
+    .businessFooter p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (max-width:767px){
+
+    .businessSection th {
+        font-size: 14px;
+    }
+    
+    .businessSection td {
+        padding-left: 20px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .businessFooter {
+        padding: 10px auto;
+    }
+
+    .businessFooter p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+
+    .businessSection th {
+        font-size: 12px;
+        height: 50px;
+    }
+    
+    .businessSection td {
+        padding-left: 10px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 12px;
+        height: 50px;
+    }
+
+    .businessFooter {
+        padding: 10px auto;
+    }
+
+    .businessFooter p{
+        font-size: 12px;
+        font-weight: 500;
+    }
+
 }

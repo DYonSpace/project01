@@ -12,7 +12,7 @@ function Shop({items, setItems}){
 
 
     return(
-        <div className="Shop">
+        <div className="shop">
             <header className="shopHeader">
                 <h3>ToU. store</h3>
                 <h5>태블릿을 좋은 자기개발 도구로 만들어 줄 디지털 제품</h5>

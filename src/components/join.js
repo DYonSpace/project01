@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import {Form, Button} from 'react-bootstrap';
 import {useState} from 'react';
-import BackMovie from './backMovie';
+import HomeMovie from './homeMovie';
 
 function Join({userData, setUserData, userName, setUserName}){
 
@@ -44,8 +44,8 @@ function Join({userData, setUserData, userName, setUserName}){
 
 
     return(
-        <div className="bgV">
-            <BackMovie/>
+        <div className="homeV">
+            <HomeMovie/>
             <div className="joinBox">            
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">

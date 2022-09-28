@@ -34,13 +34,12 @@ function ToU({userName}){
             </div>
 
             <header className="toUnav">
-            <div>
                 <Navbar bg="white" variant="light">
-                    <Container>                        
+                    <Container className='toUnavbar'>                        
                         <Nav className="me-auto">
-                            <div className="navContainer">
-                                <div className='navBrand'>
-                                    <Navbar.Brand onClick={()=>{navigate("/toU"); }} style={{fontSize:"50px"}}>ToU.</Navbar.Brand>
+                        <div className="navContainer">
+                                <div>
+                                    <Navbar.Brand className='navBrand' onClick={()=>{navigate("/toU"); }}>ToU.</Navbar.Brand>
                                 </div>
                                 <div>
                                     <Nav.Link onClick={()=>{navigate("about"); }}> about </Nav.Link>
@@ -50,14 +49,13 @@ function ToU({userName}){
                                 </div>
                                 <div>
                                     <Nav.Link  onClick={()=>{navigate("shop"); }}> 상점 </Nav.Link>
-                                </div>   
+                                </div>
                             </div>
                             
                         </Nav>
                     </Container>
-                    <div className="toUname"><span style={{fontFamily: 'Black Han Sans'}}>"{userName}"</span>님의 꿈을 응원합니다!</div>
+                    <div className="toUname"><span style={{fontFamily: 'Black Han Sans'}}>"{userName}"</span>님의 오늘을 응원합니다!</div>
                 </Navbar>
-                </div>
             </header>
             <section>
                 <Outlet/>

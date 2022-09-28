@@ -1,7 +1,7 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 import {Form, Button} from 'react-bootstrap';
 import {useState} from 'react';
-import BackMovie from './backMovie';
+import HomeMovie from './homeMovie';
 
 function Login({userData, userName, setUserName}){
 
@@ -27,7 +27,7 @@ function Login({userData, userName, setUserName}){
                 console.log(userName)
                 navigate("/toU");
                 if(loginId === "dancingfrog.lee@gmail.com"){
-                    alert("로그인 성공. \"DYon\"님 환영합니다!")
+                    alert("로그인 성공. \"관리자\"님 환영합니다!")
                 } else{alert("로그인 성공. \""+userName+"\"님 환영합니다!")}                
             } else {
                 alert('PW를 확인하세요.')            
@@ -42,8 +42,8 @@ function Login({userData, userName, setUserName}){
 
 }
     return(
-        <div className="bgV">
-            <BackMovie/>
+        <div className="homeV">
+            <HomeMovie/>
             <div className="loginBox">
             <Form onClick={()=>{
                 console.log('로그인박스눌러서userData다시확인')

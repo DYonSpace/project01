@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
 
+
+.club {
+    min-width: 390px;
+}
+
 .clubHeader {
     text-align: left;
     background-color: #433520;

@@ -1,7 +1,7 @@
 import './App.css';
 import './components/css/toU.css';
 import './components/css/about.css';
-import BackMovie from './components/backMovie';
+import HomeMovie from './components/homeMovie';
 import Login from './components/login';
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import ToU from './components/toU';
@@ -24,7 +24,7 @@ function App() {
   let [userData, setUserData] = useState([
     {id:"dancingfrog.lee@gmail.com",
     pw:"1234",
-    name:"DYon"}
+    name:"관리자"}
     ]);
   let [userName, setUserName] = useState("");
 
@@ -101,12 +101,10 @@ let [toUclubs, setToUclubs] = useState([
       <Routes>
         <Route path="/" element={
 
-          <div className="bgV" onClick={()=>{
+          <div className="homeV" onClick={()=>{
             navigate("login");
-            console.log('저장된 userData')
-            console.log(userData);
             }}>
-            <BackMovie/>
+            <HomeMovie/>
             <div className='vText'>
               <p>For better tomorrow</p>
               <div>Click here!</div>

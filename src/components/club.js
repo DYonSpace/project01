@@ -2,7 +2,7 @@ import './css/club.css'
 import { Container, Row, Col, Card, } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
 
-function Club({toUclubs, setToUclubs}){    
+function Club({toUclubs}){    
 
     return(
         <div className="club">

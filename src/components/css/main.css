@@ -1,7 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Sunflower&display=swap');
 
+
 .Main {
-    
+    min-width: 390px;
+}
+
+.bgV {
+    min-width: 390px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.backMovie {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+}
+
+.backMovie video {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%,-50%);
+    z-index: 0
 }
 
 .vText2 {
@@ -12,14 +38,15 @@
 }
 
 .vText2 .p1 {
-    margin-top: -100px;
+    margin-top: -50px;
     text-align: center;
-    font-size: 90px;
+    font-size: 70px;
     color: white;
 }
 
 .vText2 .p2 {
-    margin: 60px 500px 0 500px;
+    width: 450px;
+    margin: 50px auto;
     border: 1px solid white;
     text-align: center;
     font-size: 40px;
@@ -62,7 +89,7 @@
 
 .mainSection3 h1 {
     font-family: 'Black Han Sans', sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     color : #FCF8EC;
     font-weight: bolder;
 }
@@ -71,4 +98,160 @@
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 30px;
     color : #FCF8EC;
+}
+
+
+@media only screen and (max-width:1023px){
+
+    .bgV {
+        width: auto;
+    }
+    
+    .backMovie {
+        height: 60vh;
+        overflow: hidden;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .vText2 .p1 {
+        margin-top: -150px;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .vText2 .p2 {
+        width: 330px;
+        margin: 40px auto;
+        font-size: 30px;
+    }
+
+
+.mainSection1 {
+    height: 200px;
+    padding: 50px;
+}
+
+.mainSection1 h1 {
+    font-size: 50px;
+}
+
+.mainSection1 h3 {
+    font-size: 25px;
+}
+
+.mainSection3 {
+    height: 200px;
+    padding: 50px;
+}
+
+.mainSection3 h1 {
+    font-size: 50px;
+}
+
+.mainSection3 h3 {
+    font-size: 25px;
+}
+
+}
+
+
+@media only screen and (max-width:767px){
+
+    .backMovie {
+        height: 40vh;
+        overflow: hidden;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .vText2 .p1 {
+        margin-top: -230px;
+        font-size: 40px;
+    }
+    
+    .vText2 .p2 {
+        width: 250px;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+
+
+.mainSection1 {
+    height: 100px;
+    padding: 20px;
+}
+
+.mainSection1 h1 {
+    font-size: 25px;
+}
+
+.mainSection1 h3 {
+    font-size: 15px;
+}
+
+.mainSection3 {
+    height: 100px;
+    padding: 20px;
+}
+
+.mainSection3 h1 {
+    font-size: 25px;
+}
+
+.mainSection3 h3 {
+    font-size: 15px;
+}
+
+}
+
+
+@media only screen and (max-width:480px){
+
+
+    .backMovie {
+        height: 20vh;
+        overflow: hidden;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .vText2 .p1 {
+        margin-top: -290px;
+        font-size: 23px;
+    }
+    
+    .vText2 .p2 {
+        width: 120px;
+        margin: -10px auto;
+        font-size: 8px;
+    }
+
+
+.mainSection1 {
+    height: 80px;
+    padding: 15px;
+}
+
+.mainSection1 h1 {
+    font-size: 20px;
+}
+
+.mainSection1 h3 {
+    font-size: 12px;
+}
+
+.mainSection3 {
+    height: 80px;
+    padding: 15px;
+}
+
+.mainSection3 h1 {
+    font-size: 20px;
+}
+
+.mainSection3 h3 {
+    font-size: 12px;
+}
+
 }

@@ -6,7 +6,7 @@
     width: 100%;
     height: 250px;
     align-content: center;
-    padding: 70px;
+    padding: 65px;
 }
 
 .aboutHeader h1 {
@@ -22,113 +22,234 @@
     color : #025955;
 }
 
-.aboutAside {
+
+.aboutSection { 
+    width: 100%;
     color: #FCF8EC;
     background-color : #025955;
-    float : left;
-    width: 23%;
+    display: grid;
+    grid-template-columns: 23% 77%;
+    grid-template-rows: 150px 500px 430px;
+    grid-area: 
+    'a1 s1'
+    'a2 s2'
+    'a3 s3'  ;
 }
 
-.aboutAside h4{
+.aboutSection h4{
     text-align: right;
     font-size: 25px;
     font-weight: bold;
 }
 
-.aboutAside1 {
-    padding-top: 60px;
-    padding-right: 5px;
-    margin-bottom: 40px;
-    height: 150px;
-}
-
-.aboutAside2 {
-    padding-top: 60px;
-    padding-right: 5px;
-    margin-bottom: 40px;
-    height: 500px;
-}
-
-.aboutAside3 {
-    padding-top: 50px;
-    padding-right: 5px;
-    height: 450px;
-    border-bottom: solid #025955;
-}
-
-
-.aboutSection {
-    color: #FCF8EC;
-    background-color : #025955;
-    float: left;
-    width: 77%;
-}
-
 .aboutSection p {
     font-size: 17px;
 }
-
-.aboutSection1 {
-    padding: 50px 20px 0  30px;
-    margin-bottom: 40px;
-    height: 150px;
+.aboutSection div {
+    margin: 0;
+    padding: 20px;
 }
 
-.aboutSection2-1 {
-    padding: 50px 20px 0 30px;
-    height: 300px;
+.a1 {
+    grid-area: 'a1';
 }
 
-.aboutSection2-2 {
-    padding: 0 20px 0 30px;
-    height: 150px;
+.s1 {
+    grid-area: 's1';
 }
 
-.aboutSection2-3 {
-    padding: 0 0 0 30px;
-    margin-bottom: 40px;
-    height: 50px;
+.a2 {
+    grid-area: 'a2';
 }
 
-.aboutSection3 {
-    padding: 50px 20px 0 30px;
-    margin-bottom: 40px;
-    height: 550px;
+.s2 {
+    grid-area: 's2';
 }
 
-.aboutSection3-1 {
-    padding: 40px 20px 0 30px;
-    height: 230px;
+
+.a3 {
+    grid-area: 'a3';
 }
 
-.aboutSection3-2 {
-    padding: 40px 20px 0 30px;
-    height: 220px;
-    border-bottom: solid #025955;
+.s3 {
+    grid-area: 's3';
 }
 
-.aboutFooter1 {
+.aboutFooter {
     color: #025955;
     background-color : #FCF8EC;
-    clear:both;
-    height: 300px;
-    padding: 30px;
     text-align: center;
+    height: 500px;
 }
 
-.aboutFooter1 P {
+.aboutFooter div {
+    padding: 30px;
+}
+
+.f1 {
     font-size: 17px;
+    height: 300px;
 }
 
-.aboutFooter2 {
-    color: #025955;
-    background-color : #FCF8EC;
-    clear:both;
+.f2 {
+    font-size: 20px;
+    font-weight: bold;
     height: 200px;
-    padding: 30px;
-    text-align: center;
 }
 
-.aboutFooter2 P {
-    font-size: 17px;
+
+
+@media only screen and (max-width:1023px){
+
+    .aboutHeader {
+        height: 200px;
+        padding: 45px;
+    }
+
+    .aboutHeader h1 {
+        font-size: 60px;
+    }
+    
+    .aboutHeader h3 {
+        font-size: 25px;
+    }
+    
+.aboutSection { 
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
 }
+
+.aboutSection h4{
+    text-align: left;
+    font-size: 25px;
+}
+
+.aboutSection p {
+    font-size: 15px;
+}
+.aboutSection div {
+    padding: 30px auto;
+}
+
+.aboutFooter {
+    padding: 0;
+    height: 430px;
+}
+
+.aboutFooter div {
+    padding: 30px;
+}
+
+.f1 {
+    font-size: 15px;
+    height: 250px;
+}
+
+.f2 {
+    font-size: 18px;
+    height: 180px;
+}
+
+}
+
+@media only screen and (max-width:767px){
+
+    .aboutHeader {
+        height: 150px;
+        padding: 30px;
+    }
+
+    .aboutHeader h1 {
+        font-size: 50px;
+    }
+    
+    .aboutHeader h3 {
+        font-size: 20px;
+    }
+    
+
+.aboutSection h4{
+    text-align: left;
+    font-size: 25px;
+}
+
+.aboutSection p {
+    font-size: 15px;
+}
+.aboutSection div {
+    padding: 10px auto;
+}
+
+.aboutFooter {
+    padding: 0;
+    height: 420px;
+}
+
+.aboutFooter div {
+    padding: 20px;
+}
+.f1 {
+    font-size: 15px;
+    height: 260px;
+}
+
+.f2 {
+    font-size: 18px;
+    height: 160px;
+}
+
+
+}
+
+@media only screen and (max-width:480px){
+
+    .aboutHeader {
+        height: 100px;
+        padding: 15px;
+    }
+
+    .aboutHeader h1 {
+        font-size: 35px;
+    }
+    
+    .aboutHeader h3 {
+        font-size: 15px;
+    }
+    
+
+.aboutSection h4{
+    text-align: left;
+    font-size: 20px;
+}
+
+.aboutSection p {
+    font-size: 15px;
+}
+.aboutSection div {
+    padding: 20px;
+}
+
+.aboutFooter {
+    padding: 0;
+    height: 350px;
+}
+
+.aboutFooter div {
+    padding: 10px;
+}
+.f1 {
+    font-size: 15px;
+    height: 240px;
+}
+
+.f2 {
+    font-size: 18px;
+    height: 110px;
+}
+
+.aboutFooter p {
+    margin-bottom: 3px;
+}
+}
+
