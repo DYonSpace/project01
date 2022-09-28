@@ -147,7 +147,7 @@ let [toUclubs, setToUclubs] = useState([
     <div className="App">
 
       <Routes>
-        <Route path="" element={
+        <Route path="/" element={
 
           <div className="homeV" onClick={()=>{
             navigate("login");
@@ -171,7 +171,7 @@ let [toUclubs, setToUclubs] = useState([
                 <Route path="shop" element={<Shop items={items} setItems={setItems}/>}/>
                 <Route path="shop/product/:id" element={<ShopItemDetail items={items} setItems={setItems}/>}/>
         </Route>
-        <Route path="/toU/businessInfo" element={<Business/>}/>
+        <Route path="/businessInfo" element={<Business/>}/>
         <Route path="/*" element={<NotFound/>}/>
     </Routes>
     </div>
