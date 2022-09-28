@@ -9,7 +9,7 @@ function MainSlide1(){
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="http://127.0.0.1:8898/images/slide1-1.png"
+                    src={process.env.PUBLIC_URL+"/images/slide1-1.png"}
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -18,7 +18,7 @@ function MainSlide1(){
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="http://127.0.0.1:8898/images/slide1-2.png"
+                src={process.env.PUBLIC_URL+"/images/slide1-2.png"}
                 alt="Second slide"
                 />
                 <Carousel.Caption>
@@ -27,7 +27,7 @@ function MainSlide1(){
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="http://127.0.0.1:8898/images/slide1-3.png"
+                src={process.env.PUBLIC_URL+"/images/slide1-3.png"}
                 alt="Third slide"
                 />
                 <Carousel.Caption>

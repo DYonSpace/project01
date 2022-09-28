@@ -9,7 +9,7 @@ function MainSlide2(){
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="http://127.0.0.1:8898/images/slide2-1.png"
+                    src={process.env.PUBLIC_URL+"/images/slide2-1.png"}
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -18,7 +18,7 @@ function MainSlide2(){
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="http://127.0.0.1:8898/images/slide2-2.png"
+                src={process.env.PUBLIC_URL+"/images/slide2-2.png"}
                 alt="Second slide"
                 />
                 <Carousel.Caption>

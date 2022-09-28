@@ -34,24 +34,72 @@ function App() {
         itemName: "2022 낼나다이어리 (프로, 소프트레인보우)",
         content: "날짜형·프로·소프트레인보우",
         price: 12500,
-        imgPath: "http://127.0.0.1:8898/images/planner-f1.png",
-        imgPathB: "http://127.0.0.1:8898/images/planner-b1.png",
+        imgPath: `${process.env.PUBLIC_URL}/images/planner-f1.png`,
+        imgPathB: `${process.env.PUBLIC_URL}/images/planner-b1.png`,
     },
     {
         id: "pln002",
         itemName: "2022 낼나다이어리 (프로, 크림그레이)",
         content: "날짜형·프로·크림그레이",
         price: 12500,
-        imgPath: "http://127.0.0.1:8898/images/planner-f2.png",
-        imgPathB: "http://127.0.0.1:8898/images/planner-b2.png",
+        imgPath: `${process.env.PUBLIC_URL}/images/planner-f2.png`,
+        imgPathB: `${process.env.PUBLIC_URL}/images/planner-b2.png`,
     },
     {
         id: "pln003",
         itemName: "2022 낼나다이어리 (프로, 네온블랙)",
         content: "날짜형·프로·네온블랙",
         price: 12500,
-        imgPath: "http://127.0.0.1:8898/images/planner-f3.png",
-        imgPathB: "http://127.0.0.1:8898/images/planner-b3.png",
+        imgPath: `${process.env.PUBLIC_URL}/images/planner-f3.png`,
+        imgPathB: `${process.env.PUBLIC_URL}/images/planner-b3.png`,
+    },
+    {
+      id: "pln004",
+      itemName: "2022 낼나다이어리 (베이직, 소프트레인보우)",
+      content: "날짜형·베이직·소프트레인보우",
+      price: 9700,
+      imgPath: `${process.env.PUBLIC_URL}/images/planner-f4.png`,
+      imgPathB: `${process.env.PUBLIC_URL}/images/planner-b4.png`,
+    },
+    {
+      id: "pln005",
+      itemName: "2022 낼나다이어리 (베이직, 크림그레이)",
+      content: "날짜형·베이직·크림그레이",
+      price: 9700,
+      imgPath: `${process.env.PUBLIC_URL}/images/planner-f5.png`,
+      imgPathB: `${process.env.PUBLIC_URL}/images/planner-b5.png`,
+    },
+    {
+      id: "pln006",
+      itemName: "2022 낼나다이어리 (베이직, 네온블랙)",
+      content: "날짜형·베이직·네온블랙",
+      price: 9700,
+      imgPath: `${process.env.PUBLIC_URL}/images/planner-f6.png`,
+      imgPathB: `${process.env.PUBLIC_URL}/images/planner-b6.png`,
+    },
+    {
+      id: "pln007",
+      itemName: "2022 낼나다이어리 (라이트, 소프트레인보우)",
+      content: "날짜형·라이트·소프트레인보우",
+      price: 8100,
+      imgPath: `${process.env.PUBLIC_URL}/images/planner-f7.png`,
+      imgPathB: `${process.env.PUBLIC_URL}/images/planner-b7.png`,
+    },
+    {
+      id: "pln008",
+      itemName: "2022 낼나다이어리 (라이트, 크림그레이)",
+      content: "날짜형·라이트·크림그레이",
+      price: 8100,
+      imgPath: `${process.env.PUBLIC_URL}/images/planner-f8.png`,
+      imgPathB: `${process.env.PUBLIC_URL}/images/planner-b8.png`,
+    },
+    {
+      id: "pln009",
+      itemName: "2022 낼나다이어리 (라이트, 네온블랙)",
+      content: "날짜형·라이트·네온블랙",
+      price: 8100,
+      imgPath: `${process.env.PUBLIC_URL}/images/planner-f9.png`,
+      imgPathB: `${process.env.PUBLIC_URL}/images/planner-b9.png`,
     },
 ]);
 
@@ -62,8 +110,8 @@ let [toUclubs, setToUclubs] = useState([
       clubPrice:30000,
       content1: "2U 독서 클럽 참여를 위해서는 '낼나 독서기록장' 서식이 필요합니다.",
       content2: "이미 구매하신 분들은 그대로 사용해주시면 되고, 없으신 분들은 별도로 구매해주셔야 합니다. (서식을 무료로 증정해 드리지 않습니다.)",
-      imgPath:"http://127.0.0.1:8898/images/nelnabook00.png",
-      imgPathB:"http://127.0.0.1:8898/images/nelnabook01.png"
+      imgPath:`${process.env.PUBLIC_URL}/images/nelnabook00.png`,
+      imgPathB:`${process.env.PUBLIC_URL}/images/nelnabook01.png`
   },
   {
       id:"02",
@@ -71,8 +119,8 @@ let [toUclubs, setToUclubs] = useState([
       clubPrice:20000,
       content1: "2U 건강 클럽 참여를 위해서는 '럽마바디플래너' 서식이 필요합니다.",
       content2: "이미 구매하신 분들은 그대로 사용해주시면 되고, 없으신 분들은 별도로 구매해주셔야 합니다. (서식을 무료로 증정해 드리지 않습니다.)", 
-      imgPath:"http://127.0.0.1:8898/images/luvma00.png",
-      imgPathB:"http://127.0.0.1:8898/images/luvma01.png"
+      imgPath:`${process.env.PUBLIC_URL}/images/luvma00.png`,
+      imgPathB:`${process.env.PUBLIC_URL}/images/luvma01.png`
   },
   {
       id:"03",
@@ -80,8 +128,8 @@ let [toUclubs, setToUclubs] = useState([
       clubPrice:20000,
       content1: "2U 계획 클럽 참여를 위해서는 '슬기로운 대학생활 플래너' 서식이 필요합니다.",
       content2: "이미 구매하신 분들은 그대로 사용해주시면 되고, 없으신 분들은 별도로 구매해주셔야 합니다. (서식을 무료로 증정해 드리지 않습니다.)",
-      imgPath:"http://127.0.0.1:8898/images/myuniv00.png",
-      imgPathB:"http://127.0.0.1:8898/images/myuniv01.png"
+      imgPath:`${process.env.PUBLIC_URL}/images/myuniv00.png`,
+      imgPathB:`${process.env.PUBLIC_URL}/images/myuniv01.png`
   },
   {
       id:"04",
@@ -89,8 +137,8 @@ let [toUclubs, setToUclubs] = useState([
       clubPrice:20000,
       content1: "2U 프로그램 참여가 최종 확정된 분들께 '낼나 증정용 서식'을 무료로 증정해 드립니다.",
       content2: "따라서, 유료 서식을 구매하지 않은 분들도 참여가 가능합니다.",
-      imgPath:"http://127.0.0.1:8898/images/nelnada00.png",
-      imgPathB:"http://127.0.0.1:8898/images/nelnada01.png"
+      imgPath:`${process.env.PUBLIC_URL}/images/nelnada00.png`,
+      imgPathB:`${process.env.PUBLIC_URL}/images/nelnada01.png`
   }
 ]);
 
@@ -99,7 +147,7 @@ let [toUclubs, setToUclubs] = useState([
     <div className="App">
 
       <Routes>
-        <Route path="/" element={
+        <Route path="" element={
 
           <div className="homeV" onClick={()=>{
             navigate("login");
