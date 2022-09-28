@@ -64,7 +64,6 @@
   .joinBox {
     font-family: 'Black Han Sans', sans-serif;
     position: absolute;
-    margin: 0px, auto;
     margin-top: -500px;
     margin-left: 38%;
     width: 300px;
@@ -98,7 +97,6 @@ color: white;
 
 
   .joinBox {
-    margin: 0px, auto;
     margin-top: -500px;
     margin-left: 30%;
     width: 300px;
