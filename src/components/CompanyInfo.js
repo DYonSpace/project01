@@ -1,8 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function CompanyInfo(){
 
-    let navigate = useNavigate();
 
     return(
         <div className="Info">
@@ -14,7 +13,7 @@ function CompanyInfo(){
                 <span>·Phone:070-1234-5678</span>
                 <span>·Email:contact@2u.net</span>
                 <span>·Mail Order License:2022-아산배방-0923</span>
-                <span><Link to="#" onClick={()=>{navigate("./businessInfo")}}>[사업자정보확인]</Link></span>
+                <span><Link to="./businessInfo">[사업자정보확인]</Link></span>
             </p>
         </div>
     );
