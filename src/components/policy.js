@@ -6,12 +6,13 @@ function Policy({setShowPolicy}){
     return(
 
         <div className="Policy">
-            <div className='PolicyButton'>
+            <div class="PolicyBody">
+
+                <div className='PolicyButton'>
                     <CloseButton aria-label="Hide" variant="white" onClick={()=>{
                         setShowPolicy(false);
                     }}/>
-            </div>
-            <div class="PolicyBody">
+                </div>
                 <h3>개인정보처리방침</h3><br/>
                 <br/>
 <p>

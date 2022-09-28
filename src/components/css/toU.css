@@ -121,9 +121,8 @@
 
 .ClauseButton, .PolicyButton {
     float: right;
-    margin: 80px 100px;
+    margin: 10px 0;
 }
-
 
 
 @media only screen and (max-width:1023px){
@@ -137,8 +136,7 @@
 }
 
 .ClauseButton, .PolicyButton {
-    float: right;
-    margin: 80px 100px;
+    margin: 15px;
 }
 
     .toUnav .navBrand {
@@ -201,7 +199,7 @@
 
 .ClauseButton, .PolicyButton {
     float: right;
-    margin: 80px 80px;
+    margin: 15px;
 }
 
 
@@ -293,7 +291,7 @@
     
     .ClauseButton, .PolicyButton {
         float: right;
-        margin: 80px 60px;
+        margin: 15px;
     }
     
 
