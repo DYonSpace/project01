@@ -1,5 +1,4 @@
-import { useNavigate } from "react-router-dom";
-import {Link} from 'react-bootstrap';
+import { Link, useNavigate } from "react-router-dom";
 
 function CompanyInfo(){
 
