@@ -14,7 +14,7 @@ function CompanyInfo(){
                 <span>·Phone:070-1234-5678</span>
                 <span>·Email:contact@2u.net</span>
                 <span>·Mail Order License:2022-아산배방-0923</span>
-                <span className='bInfo' onClick={()=>{navigate("./businessInfo")}} target="_blank" >[사업자정보확인]</span>
+                <span className='bInfo' onClick={()=>{navigate("./businessInfo")}}>[사업자정보확인]</span>
             </p>
         </div>
     );
