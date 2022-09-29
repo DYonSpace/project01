@@ -20,13 +20,13 @@ function Join({userData, setUserData, userName, setUserName}){
                     console.log('회원가입 필터링한 tempdata')
                     console.log(tempdata);
                 if(tempdata.length > 0){
-                    alert('이미 등록된 ID입니다.')
+                    alert('이미 가입된 ID입니다.')
                 } else {                        
                     let copyData = [...userData]
                     copyData.push({id:inputId, pw:inputPw, name:inputName})
                     setUserData(copyData);
                     setUserName(inputName);
-                    alert("등록 완료. 로그인하세요!");
+                    alert("회원 가입 완료. 로그인하세요!");
                     navigate("/login");
                     setInputId("");
                     setInputPw("");
