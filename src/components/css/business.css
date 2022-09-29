@@ -22,6 +22,7 @@
 .businessSection td {
     width: 30%;
     height: 55px;
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(222, 222, 222);
     padding-left: 30px;
     text-align: left;
