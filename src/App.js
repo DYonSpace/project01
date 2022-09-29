@@ -26,8 +26,9 @@ function App() {
     pw:"1234",
     name:"관리자"}
     ]);
-  let [userName, setUserName] = useState("");
 
+  let [userName, setUserName] = useState("");
+  
   let [items, setItems] = useState([
     {
         id: "pln001",
@@ -170,8 +171,8 @@ let [toUclubs, setToUclubs] = useState([
                 <Route path="club/:id" element={<ClubDetail toUclubs={toUclubs} setToUclubs={setToUclubs}/>}/>
                 <Route path="shop" element={<Shop items={items} setItems={setItems}/>}/>
                 <Route path="shop/product/:id" element={<ShopItemDetail items={items} setItems={setItems}/>}/>
+                <Route path="businessInfo" element={<Business/>}/>
         </Route>
-        <Route path="businessInfo" element={<Business/>}/>
         <Route path="*" element={<NotFound/>}/>
         <Route path="/*" element={<NotFound/>}/>
     </Routes>
